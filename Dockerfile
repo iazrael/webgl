@@ -8,8 +8,8 @@ RUN npm install --only=production
 
 COPY . /app
 
-RUN npm install pm2 -g
+# RUN npm install pm2 -g
 
 EXPOSE 3000
 
-CMD [ "pm2-runtime", "start", "ecosystem.config.js" ]
+CMD [ "npm", "start" ]
